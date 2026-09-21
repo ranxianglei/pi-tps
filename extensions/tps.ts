@@ -3,8 +3,8 @@
  * Placed in ~/.pi/agent/extensions/ (auto-discovered, hot-reloadable via /reload).
  */
 
-import type { ExtensionAPI } from "pi-stable";
-import type { AssistantMessage } from "pi-stable-ai";
+import type { AssistantMessage } from "@earendil-works/pi-ai";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 export default function (pi: ExtensionAPI) {
 	let start = 0;
