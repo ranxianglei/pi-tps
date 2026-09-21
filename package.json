@@ -1,7 +1,7 @@
 {
-  "name": "pi-tps",
+  "name": "@ranxianglei/pi-tps",
   "version": "0.1.0",
-  "description": "Pi extension that notifies the assistant output speed (tokens/sec) after each response",
+  "description": "极简 tps 小工具：每条 assistant 回复后提示本次输出 tokens/s（minimal tokens/sec notifier for pi）",
   "keywords": [
     "pi-package"
   ],
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ranxianglei/pi-tps.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "pi": {
     "extensions": [

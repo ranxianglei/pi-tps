@@ -1,6 +1,6 @@
-# pi-tps
+# @ranxianglei/pi-tps
 
-A tiny [pi](https://pi.dev) extension that shows the assistant output speed after each response.
+A tiny [pi](https://pi.dev) extension — 极简 tps 小工具：shows the assistant output speed after each response.
 
 After every assistant message, pi pops a notification like:
 
@@ -13,17 +13,17 @@ After every assistant message, pi pops a notification like:
 ## Install
 
 ```bash
-# from git
-pi install git:github.com/ranxianglei/pi-tps@v0.1.0
+# from npm
+pi install npm:@ranxianglei/pi-tps
 
 # one-off trial (no install)
-pi -e git:github.com/ranxianglei/pi-tps
+pi -e npm:@ranxianglei/pi-tps
 ```
 
 Uninstall:
 
 ```bash
-pi remove git:github.com/ranxianglei/pi-tps
+pi remove npm:@ranxianglei/pi-tps
 ```
 
 Requires a pi build where extensions are auto-discovered (default). No other dependencies.
