@@ -1,6 +1,6 @@
 {
   "name": "@ranxianglei/pi-tps",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "极简 tps 小工具：每条 assistant 回复后提示本次输出 tokens/s（minimal tokens/sec notifier for pi）",
   "keywords": [
     "pi-package"
@@ -17,9 +17,5 @@
     "extensions": [
       "./extensions"
     ]
-  },
-  "peerDependencies": {
-    "pi-stable": "*",
-    "pi-stable-ai": "*"
   }
 }
