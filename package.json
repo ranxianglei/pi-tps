@@ -1,0 +1,22 @@
+{
+  "name": "pi-tps",
+  "version": "0.1.0",
+  "description": "Pi extension that notifies the assistant output speed (tokens/sec) after each response",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ranxianglei/pi-tps.git"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "pi-stable": "*",
+    "pi-stable-ai": "*"
+  }
+}
