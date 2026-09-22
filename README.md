@@ -31,6 +31,7 @@ Requires a pi build where extensions are auto-discovered (default). No other dep
 ## Notes
 
 - Speed is measured per assistant message via `message_start`/`message_end` and `usage.output`; it is an average over the whole message, not a live per-second counter.
+- Rates above a sanity ceiling (default **1500 tok/s**, override with `PI_TPS_MAX_RATE`) are physically implausible for real generation — they usually mean an instant/cached reply or a zero-length measurement window (some provider paths emit `message_start` milliseconds before `message_end`). Such values are shown as `>1.5k tok/s` instead of a fabricated number; non-streamed messages fall back to the message object's own timestamp.
 - Displayed with the theme's `success` color; change `fg("success", ...)` in `extensions/tps.ts` to any other token (`accent`, `warning`, ...).
 - If your frontend does not render footer status, the notification (`ctx.ui.notify`) path shown here works in both TUI and RPC/ACP mode.
 
